@@ -1,0 +1,26 @@
+CompileFlags:
+  CompilationDatabase: .
+  Add:
+    - --target=x86_64-pc-windows-msvc
+    - -std=c++20
+    - -fms-extensions
+    - -fms-compatibility
+    - -D_CRT_SECURE_NO_WARNINGS
+    - -DNDEBUG
+    - -D_CONSOLE
+    - -DNOMINMAX
+    - -DWIN32_LEAN_AND_MEAN
+    - -Iproject
+    - -Iproject/deps/dxsdk/Include
+    - -Iproject/deps/freetype/include
+---
+If:
+  PathMatch: .*\.(h|hxx|hh)
+CompileFlags:
+  Add:
+    - -xc++-header
+---
+If:
+  PathMatch: project/deps/.*
+Diagnostics:
+  Suppress: "*"

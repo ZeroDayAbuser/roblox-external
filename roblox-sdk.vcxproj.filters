@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\cache">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\cache\game">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\cache\lists">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\cache\world">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\cache\map">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\rblx">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\rblx\classes">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\rblx\engine">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-11111111111a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\rblx\offsets">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-11111111111b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\rblx\physics">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-11111111111c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\rblx\types">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-11111111111d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\features">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-11111111111e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\features\chams">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-11111111111f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\features\chams\engine">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\features\player">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\gui">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\gui\manager">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111122}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\gui\widgets">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\gui\overlay">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\gui\loop">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111125}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\scheduler">
+      <UniqueIdentifier>{a1111111-1111-1111-1111-111111111126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{c1111111-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\memory">
+      <UniqueIdentifier>{c1111111-1111-1111-1111-111111111112}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\memory\cave">
+      <UniqueIdentifier>{c1111111-1111-1111-1111-111111111115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\memory\cave\gate">
+      <UniqueIdentifier>{c1111111-1111-1111-1111-111111111116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\sdk\rblx\reflect">
+      <UniqueIdentifier>{c1111111-1111-1111-1111-111111111117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\output">
+      <UniqueIdentifier>{c1111111-1111-1111-1111-111111111113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\syscall">
+      <UniqueIdentifier>{c1111111-1111-1111-1111-111111111114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="deps">
+      <UniqueIdentifier>{d1111111-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="project\entry.cxx" />
+    <ClCompile Include="project\deps\imgui\imgui.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="project\deps\imgui\imgui_demo.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="project\deps\imgui\imgui_draw.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="project\deps\imgui\imgui_impl_dx11.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="project\deps\imgui\imgui_impl_win32.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="project\deps\imgui\imgui_tables.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="project\deps\imgui\imgui_widgets.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="project\deps\imgui\stb_image.cpp">
+      <Filter>deps</Filter>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\common\debug.c" />
+    <ClCompile Include="project\deps\zstd\lib\common\entropy_common.c" />
+    <ClCompile Include="project\deps\zstd\lib\common\error_private.c" />
+    <ClCompile Include="project\deps\zstd\lib\common\fse_decompress.c" />
+    <ClCompile Include="project\deps\zstd\lib\common\xxhash.c" />
+    <ClCompile Include="project\deps\zstd\lib\common\zstd_common.c" />
+    <ClCompile Include="project\deps\zstd\lib\decompress\huf_decompress.c" />
+    <ClCompile Include="project\deps\zstd\lib\decompress\zstd_ddict.c" />
+    <ClCompile Include="project\deps\zstd\lib\decompress\zstd_decompress.c" />
+    <ClCompile Include="project\deps\zstd\lib\decompress\zstd_decompress_block.c" />
+    <ClCompile Include="project\core\framework\features\visuals\chams\mesh\cache\mesh_cache.cxx" />
+    <ClCompile Include="project\core\framework\features\visuals\chams\mesh\parser\mesh_parser.cxx" />
+    <ClCompile Include="project\core\framework\features\visuals\chams\mesh\mesh_chams_stack.cxx" />
+    <ClCompile Include="project\core\framework\features\visuals\chams\mesh\shader\mesh_dx_shader.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="project\includes.hxx" />
+    <ClInclude Include="project\core\globals.hxx">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\scheduler\scheduler.hxx">
+      <Filter>core\scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\cache\game\game.hxx">
+      <Filter>core\sdk\cache\game</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\cache\lists\lists.hxx">
+      <Filter>core\sdk\cache\lists</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\cache\lists\world_lists.hxx">
+      <Filter>core\sdk\cache\lists</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\cache\world\world.hxx">
+      <Filter>core\sdk\cache\world</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\cache\map\workspace.hxx">
+      <Filter>core\sdk\cache\map</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\cache\map\spatial_grid.hxx">
+      <Filter>core\sdk\cache\map</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\cache\map\player_mesh.hxx">
+      <Filter>core\sdk\cache\map</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\classes\classes.hxx">
+      <Filter>core\sdk\rblx\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\offsets\offsets.hxx">
+      <Filter>core\sdk\rblx\offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\engine\contact.hxx">
+      <Filter>core\sdk\rblx\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\engine\raycast.hxx">
+      <Filter>core\sdk\rblx\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\engine\terrain.hxx">
+      <Filter>core\sdk\rblx\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\physics\collision_intersect.hxx">
+      <Filter>core\sdk\rblx\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\physics\collision_mesh.hxx">
+      <Filter>core\sdk\rblx\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\render_mesh.hxx">
+      <Filter>core\features\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\types\enums.hxx">
+      <Filter>core\sdk\rblx\types</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\types\math.hxx">
+      <Filter>core\sdk\rblx\types</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\types\structs.hxx">
+      <Filter>core\sdk\rblx\types</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\framework\features\visuals\chams\chams.hxx">
+      <Filter>core\features\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\framework\features\visuals\chams\cham_baker.hxx">
+      <Filter>core\features\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh_chams.hxx">
+      <Filter>core\features\chams</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\framework\features\visuals\chams\engine\engine_chams.hxx">
+      <Filter>core\features\chams\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\framework\features\visuals\esp.hxx">
+      <Filter>core\gui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\framework\gui\widgets\explorer.hxx">
+      <Filter>core\gui\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\api.hxx">
+      <Filter>utils\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\memory.hxx">
+      <Filter>utils\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\cave.hxx">
+      <Filter>utils\memory\cave</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\cfg.hxx">
+      <Filter>utils\memory\cave</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\module_cave.hxx">
+      <Filter>utils\memory\cave</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\xrw_pool.hxx">
+      <Filter>utils\memory\cave</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\image_cave.hxx">
+      <Filter>utils\memory\cave</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\nt_remote.hxx">
+      <Filter>utils\memory\cave</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\pe_stub.hxx">
+      <Filter>utils\memory\cave</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\gate\engine_gate.hxx">
+      <Filter>utils\memory\cave\gate</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\memory\cave\gate\trampoline.hxx">
+      <Filter>utils\memory\cave\gate</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\sdk\rblx\reflect\descriptors.hxx">
+      <Filter>core\sdk\rblx\reflect</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\mouse.hxx">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\output\console.hxx">
+      <Filter>utils\output</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\output\logger.hxx">
+      <Filter>utils\output</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\syscall\mnemosyne.hxx">
+      <Filter>utils\syscall</Filter>
+    </ClInclude>
+    <ClInclude Include="project\utils\utilities.hxx">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="project\core\framework\features\player\player.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\tracers\tracers.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\tracers\tracer_gpu.hxx" />
+    <ClInclude Include="project\core\framework\features\combat\triggerbot.hxx" />
+    <ClInclude Include="project\core\framework\gui\loop\loop.hxx" />
+    <ClInclude Include="project\core\framework\gui\manager\manager.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\menu.hxx" />
+    <ClInclude Include="project\core\framework\gui\overlay\overlay.hxx" />
+    <ClInclude Include="project\core\framework\gui\manager\fonts\fonts.hxx" />
+    <ClInclude Include="project\core\framework\gui\manager\shaders\shaders.hxx" />
+    <ClInclude Include="project\core\framework\gui\manager\textures\textures.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\types\cache\map_types.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\engine\primitive.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\types\cache\mesh_types.hxx" />
+    <ClInclude Include="project\deps\imgui\imconfig.h" />
+    <ClInclude Include="project\deps\imgui\imgui.h" />
+    <ClInclude Include="project\deps\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="project\deps\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="project\deps\imgui\imgui_internal.h" />
+    <ClInclude Include="project\deps\imgui\imstb_rectpack.h" />
+    <ClInclude Include="project\deps\imgui\imstb_textedit.h" />
+    <ClInclude Include="project\deps\imgui\imstb_truetype.h" />
+    <ClInclude Include="project\deps\imgui\stb_image.h" />
+    <ClInclude Include="project\core\sdk\rblx\types\brick_color.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\particles\fx.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\particles\particle_gpu.hxx" />
+    <ClInclude Include="project\core\sdk\cache\keys.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\adapt.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\stack.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\mesh_chams_stack.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\cache\mesh_cache.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\parser\mesh_parser.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\shader\mesh_dx_shader.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\explorer.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\tree.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\properties.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\script_viewer.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\search.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\class_icons.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\sound_esp.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\script\bytecode.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\script\konstant.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\value\value_base.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\value\path.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\reflect\reflection_type.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\engine\map_parser\map_parser.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="project\utils\memory\memory.asm">
+      <Filter>utils\memory</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

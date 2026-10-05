@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{37f14199-b72e-40bb-a639-041df71feda3}</ProjectGuid>
+    <RootNamespace>robloxsdk</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\output\</OutDir>
+    <IntDir>$(SolutionDir)\output\intermediate\</IntDir>
+    <TargetName>project</TargetName>
+    <IncludePath>$(SolutionDir)\project\deps\dxsdk\Include\;$(SolutionDir)\project\deps\freetype\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\project\deps\dxsdk\lib\x64\;$(SolutionDir)\project\deps\freetype\lib\x64\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\project\.</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\project\.</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;ZSTD_DISABLE_ASM;ZSTD_LEGACY_SUPPORT=0;XXH_NAMESPACE=ZSTD_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\project\.;$(ProjectDir)\project\deps\zstd\lib</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <StackReserveSize>8388608</StackReserveSize>
+      <StackCommitSize>262144</StackCommitSize>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;ZSTD_DISABLE_ASM;ZSTD_LEGACY_SUPPORT=0;XXH_NAMESPACE=ZSTD_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)\project\.;$(ProjectDir)\project\deps\zstd\lib</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;winhttp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>8388608</StackReserveSize>
+      <StackCommitSize>262144</StackCommitSize>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="project\deps\imgui\imgui.cpp" />
+    <ClCompile Include="project\deps\imgui\imgui_demo.cpp" />
+    <ClCompile Include="project\deps\imgui\imgui_draw.cpp" />
+    <ClCompile Include="project\deps\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="project\deps\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="project\deps\imgui\imgui_tables.cpp" />
+    <ClCompile Include="project\deps\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="project\deps\imgui\stb_image.cpp" />
+    <ClCompile Include="project\deps\zstd\lib\common\debug.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\common\entropy_common.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\common\error_private.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\common\fse_decompress.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\common\xxhash.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\common\zstd_common.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\decompress\huf_decompress.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\decompress\zstd_ddict.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\decompress\zstd_decompress.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\deps\zstd\lib\decompress\zstd_decompress_block.c">
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+    </ClCompile>
+    <ClCompile Include="project\entry.cxx" />
+    <ClCompile Include="project\core\framework\features\visuals\chams\mesh\cache\mesh_cache.cxx" />
+    <ClCompile Include="project\core\framework\features\visuals\chams\mesh\parser\mesh_parser.cxx" />
+    <ClCompile Include="project\core\framework\features\visuals\chams\mesh\mesh_chams_stack.cxx" />
+    <ClCompile Include="project\core\framework\features\visuals\chams\mesh\shader\mesh_dx_shader.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="project\core\framework\features\visuals\chams\cham_baker.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\chams.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh_chams.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\engine\engine_chams.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\adapt.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\stack.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\mesh_chams_stack.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\cache\mesh_cache.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\parser\mesh_parser.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\shader\mesh_dx_shader.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\particles\fx.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\particles\particle_gpu.hxx" />
+    <ClInclude Include="project\core\framework\features\player\player.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\tracers\tracers.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\tracers\tracer_gpu.hxx" />
+    <ClInclude Include="project\core\framework\features\combat\triggerbot.hxx" />
+    <ClInclude Include="project\core\framework\gui\loop\loop.hxx" />
+    <ClInclude Include="project\core\framework\gui\manager\manager.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\menu.hxx" />
+    <ClInclude Include="project\core\framework\gui\overlay\overlay.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\esp.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\explorer.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\tree.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\properties.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\script_viewer.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\search.hxx" />
+    <ClInclude Include="project\core\framework\gui\widgets\explorer\class_icons.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\sound_esp.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\script\bytecode.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\script\konstant.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\value\value_base.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\value\path.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\reflect\reflection_type.hxx" />
+    <ClInclude Include="project\core\framework\gui\manager\fonts\fonts.hxx" />
+    <ClInclude Include="project\core\framework\gui\manager\shaders\shaders.hxx" />
+    <ClInclude Include="project\core\framework\gui\manager\textures\textures.hxx" />
+    <ClInclude Include="project\core\globals.hxx" />
+    <ClInclude Include="project\core\scheduler\scheduler.hxx" />
+    <ClInclude Include="project\core\sdk\cache\game\game.hxx" />
+    <ClInclude Include="project\core\sdk\cache\keys.hxx" />
+    <ClInclude Include="project\core\sdk\cache\lists\lists.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\types\brick_color.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\types\cache\map_types.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\engine\map_parser\map_parser.hxx" />
+    <ClInclude Include="project\core\sdk\cache\map\player_mesh.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\engine\primitive.hxx" />
+    <ClInclude Include="project\core\sdk\cache\map\spatial_grid.hxx" />
+    <ClInclude Include="project\core\sdk\cache\map\workspace.hxx" />
+    <ClInclude Include="project\core\sdk\cache\world\world.hxx" />
+    <ClInclude Include="project\core\sdk\cache\lists\world_lists.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\classes\classes.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\engine\contact.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\types\enums.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\types\math.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\offsets\offsets.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\types\cache\mesh_types.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\physics\collision_intersect.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\physics\collision_mesh.hxx" />
+    <ClInclude Include="project\core\framework\features\visuals\chams\mesh\render_mesh.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\engine\raycast.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\types\structs.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\engine\terrain.hxx" />
+    <ClInclude Include="project\includes.hxx" />
+    <ClInclude Include="project\utils\memory\api.hxx" />
+    <ClInclude Include="project\utils\memory\memory.hxx" />
+    <ClInclude Include="project\utils\memory\cave\cave.hxx" />
+    <ClInclude Include="project\utils\memory\cave\cfg.hxx" />
+    <ClInclude Include="project\utils\memory\cave\module_cave.hxx" />
+    <ClInclude Include="project\utils\memory\cave\xrw_pool.hxx" />
+    <ClInclude Include="project\utils\memory\cave\image_cave.hxx" />
+    <ClInclude Include="project\utils\memory\cave\nt_remote.hxx" />
+    <ClInclude Include="project\utils\memory\cave\pe_stub.hxx" />
+    <ClInclude Include="project\utils\memory\cave\gate\engine_gate.hxx" />
+    <ClInclude Include="project\utils\memory\cave\gate\trampoline.hxx" />
+    <ClInclude Include="project\core\sdk\rblx\reflect\descriptors.hxx" />
+    <ClInclude Include="project\utils\mouse.hxx" />
+    <ClInclude Include="project\utils\output\console.hxx" />
+    <ClInclude Include="project\utils\output\logger.hxx" />
+    <ClInclude Include="project\utils\syscall\mnemosyne.hxx" />
+    <ClInclude Include="project\utils\utilities.hxx" />
+    <ClInclude Include="project\deps\imgui\imconfig.h" />
+    <ClInclude Include="project\deps\imgui\imgui.h" />
+    <ClInclude Include="project\deps\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="project\deps\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="project\deps\imgui\imgui_internal.h" />
+    <ClInclude Include="project\deps\imgui\imstb_rectpack.h" />
+    <ClInclude Include="project\deps\imgui\imstb_textedit.h" />
+    <ClInclude Include="project\deps\imgui\imstb_truetype.h" />
+    <ClInclude Include="project\deps\imgui\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="project\utils\memory\memory.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

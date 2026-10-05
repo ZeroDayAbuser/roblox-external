@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="roblox-sdk.vcxproj" Id="37f14199-b72e-40bb-a639-041df71feda3" />
+</Solution>

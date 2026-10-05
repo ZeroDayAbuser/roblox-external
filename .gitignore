@@ -1,0 +1,32 @@
+# ── Visual Studio caches ─────────────────────────────────────────────────
+.vs/
+*.suo
+*.user
+*.userosscache
+*.VC.db
+*.VC.opendb
+Browse.VC.db
+*.ipch
+*.iobj
+*.ipdb
+*.idb
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.tlog
+*.recipe
+*.lastbuildstate
+*.log
+
+# ── Build output ─────────────────────────────────────────────────────────
+output/
+[Dd]ebug/
+[Rr]elease/
+
+# ── Runtime / misc ───────────────────────────────────────────────────────
+imgui.ini
+*.bak
+*.tmp
+Thumbs.db
+desktop.ini

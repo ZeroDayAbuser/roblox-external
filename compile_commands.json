@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "C:/Users/bryan/Downloads/proj3/proj",
+    "file": "C:/Users/bryan/Downloads/proj3/proj/project/entry.cxx",
+    "command": "clang++ --target=x86_64-pc-windows-msvc -std=c++20 -fms-extensions -fms-compatibility -D_CRT_SECURE_NO_WARNINGS -DNDEBUG -D_CONSOLE -DNOMINMAX -DWIN32_LEAN_AND_MEAN -IC:/Users/bryan/Downloads/proj3/proj/project -IC:/Users/bryan/Downloads/proj3/proj/project/deps/dxsdk/Include -IC:/Users/bryan/Downloads/proj3/proj/project/deps/freetype/include -c project/entry.cxx"
+  }
+]
