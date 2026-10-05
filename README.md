@@ -1,9 +1,5 @@
 <div align="center">
 
-<img src="project/assets/images/logo.png" width="140" alt="nirvana logo"/>
-
-# nirvana
-
 **An external overlay for Roblox (`RobloxPlayerBeta.exe`) written in modern C++.**
 
 Memory internals · ImGui/D3D11 overlay · Aimbot · Triggerbot · ESP · Chams · Particles
@@ -12,28 +8,10 @@ Memory internals · ImGui/D3D11 overlay · Aimbot · Triggerbot · ESP · Chams 
 
 </div>
 
----
-
-## ⚠️ Disclaimer
-
-This project is published **for educational and research purposes only** — it is a study of
-external process instrumentation, code-cave / trampoline memory techniques, Direct3D overlay
-rendering, and reverse engineering of the Roblox client.
-
-- Using this in an online game **violates Roblox's Terms of Use** and will get your account
-  **permanently banned** (and can get your hardware flagged).
-- Use is entirely **at your own risk**. The authors take **no responsibility** for bans, hardware
-  flags, account loss, or any other consequences.
-- Do **not** use this against other players. Do **not** distribute compiled binaries.
-- No warranty of any kind is provided (see [License](#license)).
-
-If you do not agree with the above, do not use, build, or distribute this project.
-
----
 
 ## Overview
 
-`nirvana` is an **external** cheat. It runs as its own process, attaches to the Roblox client,
+`popstar` is an **external** cheat. It runs as its own process, attaches to the Roblox client,
 reads/writes it through a layered memory backend, and draws its UI with Dear ImGui on a
 Direct3D 11 overlay.
 
@@ -86,7 +64,7 @@ target's own image — so no `SEC_IMAGE` is wiped and no remote thread is requir
 
 ```
  ┌──────────────────────────────────────────────┐
- │  project.exe  (nirvana)                      │
+ │  project.exe  (popstar)                      │
  │                                              │
  │  utils/memory ── api · memory.asm · syscall   │
  │       │                                      │
